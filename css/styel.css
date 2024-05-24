@@ -17,3 +17,348 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+    font-family: var(--body-font);
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--Very-Dark-Cyan);
+}
+
+p{
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Huddle part */
+
+section {
+    background-image: url(../images/bg-hero-desktop.svg) ;
+    padding: 20px;
+    width: fit-content;
+
+}
+
+section .huddle {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    align-items: center;
+}
+
+section .huddle img {
+    width: 150px;
+}
+
+section .huddle a {
+    background-color: white;
+    color: var(--Very-Dark-Cyan);
+    padding: 10px 33px;
+    border-radius: 30px;
+    font-size: var(--heading-font);
+    font-weight: 600;
+    box-shadow: 0 0 5px 0px;
+    
+}
+
+section .community {
+
+    display: flex;
+    justify-content: space-around;
+    margin: 55px 0;
+
+}
+
+section  .community .content {
+    text-align: left;
+    margin-top: 26px;
+    margin-right: 30px;
+    
+}
+
+section .community .content h1{
+    font-size: 42px;
+    color: var(--Very-Dark-Cyan);
+}
+
+section .community .content p {
+    margin: 24px 10px;
+    line-height: 1.7;
+    /*opacity: 90%;*/
+    color: var(--Very-Dark-Cyan)
+}
+
+section .community .content a{
+    background-color: var(--Pink);
+    padding: 10px 30px;
+    color: var(--Very-Pale-Cyan);
+    font-weight: 500;
+    font-family: var(--heading-font);
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px 1px var(--Grayish-Blue);
+
+}
+
+section .community img {
+    width: 610px;
+    object-fit: scale-down;
+}
+
+
+main {
+    padding: 0 10px 60px;
+    
+}
+main img {
+    width: 350px;
+    margin: 0 25px;
+}
+main > div {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 60px;
+    border: 1px solid white;
+    box-shadow: 0 0 6px -2px;
+    padding: 20px 30px;
+    border-radius: 78px;
+
+}
+
+main > div .content {
+        margin: 0 75px 0 70px;
+}
+
+main > div h1 {
+    font-size: 34px;
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 10px;
+}
+
+main > div p {
+    opacity: 70%;
+}
+
+main aside {
+    text-align: center;
+    position: relative;
+    bottom: -130px;
+    background-color: white;
+    z-index: 100;
+    width: fit-content;
+    margin: 0 auto;
+    padding:26px 40px;
+    box-shadow: 0 0 2px -1px;
+    border-radius: 8px;
+}
+
+main aside h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+main aside a {
+    color: white;
+    background-color: var(--Pink);
+    padding: 8px 24px;
+    border-radius: 30px;
+    box-shadow: 0 0 4px -1px var(--Very-Dark-Cyan);
+
+}
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Cyan);
+    padding: 110px 0 6px;
+    /* width: fit-content; */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+footer .container div:not(:last-of-type) {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container div:not(:first-of-type) {
+    margin-top: 60.5px;
+}
+
+
+
+footer .container .huddle {
+    width: 270px;
+}
+
+footer .container .huddle img {
+    filter: brightness(0) invert(1);
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+footer .container div a {
+    color: var(--Very-Pale-Cyan);
+    margin-bottom: 15px;
+    
+}
+
+footer .container .huddle a {
+    position: relative;
+    margin-left: 15px;
+}
+
+footer .container .huddle .location::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    left: -14px;
+}
+
+footer .container .huddle .phone::before {
+    content: "\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    left: -14px;
+}
+
+footer .container .huddle .mail::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    left: -14px;
+}
+
+/* footer .container .socials {
+
+    margin: 0 10px;
+
+}  */
+
+footer .container .socials a {
+    margin: 0 3px;
+    font-size: 16px;
+    padding: 0; 
+
+}
+
+footer .container .socials a i {
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid white;
+    font-size: 18px;
+
+}
+
+/* footer .container .socials a:first-of-type i {
+    color: var(--Very-Dark-Cyan);
+    background: white;
+} */
+
+footer .copyright {
+    font-size: 8px;
+    text-align: right;
+    position: relative;
+    margin-top: 95px;
+}
+
+/* Tablet Version */
+@media (min-width: 767px) and (max-width: 934px) {
+
+        section .community img {
+        width: 400px;
+    }
+
+    main img {
+    width: 250px;
+    margin: 0px 6px;
+}
+}
+
+/* Mobile version */ 
+
+@media (max-width:767px) {
+
+    section .community {
+
+    flex-direction: column;
+    align-items: center;}
+
+    section .community .content {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+    section .community img {
+        width: 286px;
+    }
+
+    section .huddle a {
+            padding: 5px 22px;
+    }
+
+    section .huddle img {
+        width: 98px;
+    }
+
+    main > div:not(:nth-of-type(2)) {
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+
+    main > div:nth-of-type(2) {
+        flex-direction: column;
+    }
+
+        main > div {
+        /* padding: 52px 154px; */
+            width: 340px;
+        margin: 20px auto;
+    }
+
+    main img {
+    width: 190px;
+    margin: 0 25px 30px;
+}
+    main > div h1{
+    font-size: 30px;
+}
+    main > div p {
+    font-size: 14px;
+}
+
+footer .container {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+
+}
+}
+
+
+
+
+
